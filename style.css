@@ -223,5 +223,39 @@ Feature video start
     justify-content: space-evenly;
 }
 /* ---------------
-Feature video start
+Feature video end
 ------------------ */
+/* 
+-------------
+Footer start 
+--------------
+*/
+.footerWrapper{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+}
+
+.footerImg img{
+    height: 100px;
+    width: 400px;
+
+
+
+}
+.socialIcons a {
+    color: black;
+    font-size: 30px;
+    margin-left: 18px;
+}
+.copyright span{
+    font-size: 18px;
+    margin-left: 28px;
+}
+/* 
+-------------
+Footer end
+--------------
+*/
