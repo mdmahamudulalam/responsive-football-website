@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
     /* ------------ 
     Common Styles 
     --------------- */
@@ -6,13 +7,16 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+main{
+    
+    background-color: rgb(238, 236, 236);
+}
 h1{
     font-size: 72px;
 }
 /* -------------
 Navigation Bar 
 --------------- */
-
 
 .header{
     
@@ -27,21 +31,17 @@ Navigation Bar
     margin: 30px;
     padding: 10px;
 }
-.loginBtn{
-    margin: 30px;
-    padding: 10px;
-
-}
 .navBar  a {
     text-decoration: none;
     margin-left: 15px ;
     color: white;
 }
-
 .loginBtn{
-    display: flex;
-    
+    margin: 30px;
+    padding: 10px;
+
 }
+
 .loginBtn a {
     
     text-decoration: none;
@@ -51,16 +51,19 @@ Navigation Bar
 }
 
 /* -------------
-    Banner 
+    Top Banner 
 --------------- */
 
 .banner{
     display: flex;
     background-color: blue;
+    margin-bottom: 70px;
+    padding-bottom: 80px;
 }
 .bannerTitle{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
     margin-left: 60px;
     /* margin-top: 50px; */
@@ -74,17 +77,21 @@ Navigation Bar
     padding: 8px;
     border-radius: 5px;
 }
+.bannerTitle a:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
 .icon{
     padding-right: 10px;
-    }
-.bannerPic img{
-    margin-top: 50px;
-    width: 556px;
-    height: 438px;
 }
 .bannerPic{
     display: flex;
     width: 50%;
+}
+.bannerPic img{
+    margin-top: 50px;
+    width: 556px;
+    height: 438px;
 }
     /*---------------
     Player Gallery 
@@ -92,8 +99,8 @@ Navigation Bar
 
 .gallery{
        
-        background-color: white;
-        width: 85%;
+        background-color: rgb(238, 236, 236);
+        width: 88%;
         margin: 0 auto;
         
     }
@@ -101,17 +108,120 @@ Navigation Bar
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-area: auto;
-    
+    grid-gap:3px ;
 
     }
 .player{
-
-    padding: 25px;
-
+    
+    background-color: rgb(250, 245, 245);
+    width: 337px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid rgb(250, 245, 245);
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px rgb(250, 245, 245);
+    text-align:justify ;
     }
-.players img{
-    margin-top: 50px;
-    width: 300px;
-    height: 256px;
+
+.playerInfo{
+    display: flex;
+    flex-direction: column;
+    
 }
+.playerInfo p{
+    font-size: 16px;
+    
+    
+}
+.playerName{
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+}
+.imgContainer{
+   display: flex;
+   justify-content: center;
+}
+.imgContainer img{
+    margin: 5px;
+    width: 333px;
+    height: 290px;
+}
+
+/* --------------------
+Higlights part start
+---------------------- 
+*/
+
+.higlights{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.higlightsIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    padding: 15px;
+    margin: 10px;
+
+}
+.higlightsIntro p{
+    font-size: 16px;
+    text-align: justify;
+}
+.higlightsIntro span{
+    font-size: 48px;
+    font-weight: 700;
+}
+.coverageInfo{
+    padding: 15px;
+    margin: 10px;
+    width: 60%;
+}
+.coverageInfo img {
+    height: 427px;
+    width: 567px;
+
+
+}
+.higlightsIntro a{
+    text-decoration: none;
+    background-color:  #E02C6D;
+    color: white;
+    width: 115px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.watchIcon span{
+    font-size: 15px;
+    padding-right: 10px;
+}
+/* --------------------
+Higlights part end
+---------------------- 
+*/
+
+/* -------------------- 
+Feature video start 
+-----------------
+*/
+.finalMatch{
+    
+    margin-bottom: 12px;
+}
+.fMatch{
+    
+    color: rgb(63, 58, 58);
+    margin-left: 50px;
+    font-size: 45px;
+}
+.featureVideoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* ---------------
+Feature video start
+------------------ */
